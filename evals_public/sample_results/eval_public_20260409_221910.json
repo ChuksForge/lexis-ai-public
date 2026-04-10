@@ -1,0 +1,217 @@
+{
+  "suite_score": 9.52,
+  "total_cases": 5,
+  "timestamp": "20260409_221910",
+  "eval_type": "public_structural_checks",
+  "results": [
+    {
+      "id": "TC01",
+      "name": "Single source \u2014 clear research question",
+      "description": "Agent receives one high-quality peer-reviewed source and a clearly stated research question. Tests correct [S1] usage, absence of fabricated source tags, and basic schema compliance.",
+      "timestamp": "2026-04-09T22:19:10.391938",
+      "overall_score": 10.0,
+      "scores": {
+        "structural_checks": {
+          "score": 10.0,
+          "passed": [
+            "PASS: Contains '\ud83d\udccb RESEARCH BRIEF'",
+            "PASS: Contains '\ud83d\udd0d DEEP DIVE'",
+            "PASS: Contains 'OVERVIEW'",
+            "PASS: Contains 'KEY THEMES'",
+            "PASS: Contains 'CROSS-SOURCE ANALYSIS'",
+            "PASS: Contains 'INSIGHT RANKING'",
+            "PASS: Contains 'OPEN QUESTIONS'",
+            "PASS: Contains 'SYNTHESIS STATEMENT'",
+            "PASS: Contains 'SUGGESTED NEXT STEPS'",
+            "PASS: Contains '[S1]'",
+            "PASS: Correctly absent '[S2]'",
+            "PASS: Correctly absent '[S3]'"
+          ],
+          "failed": [],
+          "pass_count": 12,
+          "fail_count": 0
+        },
+        "schema_validation": {
+          "score": 10.0,
+          "valid": true,
+          "missing_sections": []
+        },
+        "annotation_count": {
+          "score": 10.0,
+          "counts": {
+            "source_tags": 17,
+            "web_tags": 0,
+            "inferred_tags": 0,
+            "general_knowledge_tags": 5,
+            "total": 22
+          }
+        }
+      },
+      "note": "Public eval uses structural checks only. LLM-as-judge scoring available via hosted product."
+    },
+    {
+      "id": "TC02",
+      "name": "Two contradicting sources",
+      "description": "Two sources that directly contradict each other on the same research question. Tests whether the contradiction section is populated and both sources are annotated correctly.",
+      "timestamp": "2026-04-09T22:19:10.392946",
+      "overall_score": 9.53,
+      "scores": {
+        "structural_checks": {
+          "score": 8.6,
+          "passed": [
+            "PASS: Contains '\ud83d\udccb RESEARCH BRIEF'",
+            "PASS: Contains 'Points of Contradiction'",
+            "PASS: Contains '[S1]'",
+            "PASS: Contains 'INSIGHT RANKING'",
+            "PASS: Contains 'SYNTHESIS STATEMENT'",
+            "PASS: Correctly absent '[S3]'"
+          ],
+          "failed": [
+            "FAIL: Missing '[S2]'"
+          ],
+          "pass_count": 6,
+          "fail_count": 1
+        },
+        "schema_validation": {
+          "score": 10.0,
+          "valid": true,
+          "missing_sections": []
+        },
+        "annotation_count": {
+          "score": 10.0,
+          "counts": {
+            "source_tags": 17,
+            "web_tags": 0,
+            "inferred_tags": 0,
+            "general_knowledge_tags": 5,
+            "total": 22
+          }
+        }
+      },
+      "note": "Public eval uses structural checks only. LLM-as-judge scoring available via hosted product."
+    },
+    {
+      "id": "TC03",
+      "name": "No sources \u2014 topic only",
+      "description": "Agent receives only a research question with no sources provided. Tests that all claims are flagged [general knowledge] and no source tags like [S1] appear in the output.",
+      "timestamp": "2026-04-09T22:19:10.393808",
+      "overall_score": 9.43,
+      "scores": {
+        "structural_checks": {
+          "score": 8.3,
+          "passed": [
+            "PASS: Contains '\ud83d\udccb RESEARCH BRIEF'",
+            "PASS: Contains '[general knowledge]'",
+            "PASS: Contains 'SYNTHESIS STATEMENT'",
+            "PASS: Contains 'SUGGESTED NEXT STEPS'",
+            "PASS: Correctly absent '[S2]'"
+          ],
+          "failed": [
+            "FAIL: Should not contain '[S1]'"
+          ],
+          "pass_count": 5,
+          "fail_count": 1
+        },
+        "schema_validation": {
+          "score": 10.0,
+          "valid": true,
+          "missing_sections": []
+        },
+        "annotation_count": {
+          "score": 10.0,
+          "counts": {
+            "source_tags": 17,
+            "web_tags": 0,
+            "inferred_tags": 0,
+            "general_knowledge_tags": 5,
+            "total": 22
+          }
+        }
+      },
+      "note": "Public eval uses structural checks only. LLM-as-judge scoring available via hosted product."
+    },
+    {
+      "id": "TC04",
+      "name": "High-quality + low-quality source",
+      "description": "One peer-reviewed source and one anonymous blog post. Tests whether the low-quality source is flagged in the Research Brief and claims are weighted accordingly.",
+      "timestamp": "2026-04-09T22:19:10.394382",
+      "overall_score": 9.33,
+      "scores": {
+        "structural_checks": {
+          "score": 8.0,
+          "passed": [
+            "PASS: Contains '\ud83d\udccb RESEARCH BRIEF'",
+            "PASS: Contains '[S1]'",
+            "PASS: Contains 'INSIGHT RANKING'",
+            "PASS: Contains 'SYNTHESIS STATEMENT'"
+          ],
+          "failed": [
+            "FAIL: Missing '[S2]'"
+          ],
+          "pass_count": 4,
+          "fail_count": 1
+        },
+        "schema_validation": {
+          "score": 10.0,
+          "valid": true,
+          "missing_sections": []
+        },
+        "annotation_count": {
+          "score": 10.0,
+          "counts": {
+            "source_tags": 17,
+            "web_tags": 0,
+            "inferred_tags": 0,
+            "general_knowledge_tags": 5,
+            "total": 22
+          }
+        }
+      },
+      "note": "Public eval uses structural checks only. LLM-as-judge scoring available via hosted product."
+    },
+    {
+      "id": "TC05",
+      "name": "Three sources \u2014 full synthesis",
+      "description": "Three sources covering different angles of the same topic. Tests full cross-source synthesis: all three annotated, convergence identified, gaps surfaced.",
+      "timestamp": "2026-04-09T22:19:10.395072",
+      "overall_score": 9.33,
+      "scores": {
+        "structural_checks": {
+          "score": 8.0,
+          "passed": [
+            "PASS: Contains '\ud83d\udccb RESEARCH BRIEF'",
+            "PASS: Contains '[S1]'",
+            "PASS: Contains 'Points of Agreement'",
+            "PASS: Contains 'Points of Contradiction'",
+            "PASS: Contains 'Gaps in the Evidence'",
+            "PASS: Contains 'INSIGHT RANKING'",
+            "PASS: Contains 'SYNTHESIS STATEMENT'",
+            "PASS: Contains 'SUGGESTED NEXT STEPS'"
+          ],
+          "failed": [
+            "FAIL: Missing '[S2]'",
+            "FAIL: Missing '[S3]'"
+          ],
+          "pass_count": 8,
+          "fail_count": 2
+        },
+        "schema_validation": {
+          "score": 10.0,
+          "valid": true,
+          "missing_sections": []
+        },
+        "annotation_count": {
+          "score": 10.0,
+          "counts": {
+            "source_tags": 17,
+            "web_tags": 0,
+            "inferred_tags": 0,
+            "general_knowledge_tags": 5,
+            "total": 22
+          }
+        }
+      },
+      "note": "Public eval uses structural checks only. LLM-as-judge scoring available via hosted product."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+Research question: Does remote work improve productivity for knowledge workers?
+Analytical lens: Focus on knowledge worker output quality, not just quantity.
+
+--- SOURCE S1: Bloom et al. (2015) ---
+
+Title: Does Working from Home Work? Evidence from a Chinese Experiment
+Published in: Quarterly Journal of Economics
+
+Key findings:
+- Remote workers showed a 13% performance increase compared to office workers
+- Performance gains attributed to: fewer breaks, fewer sick days, quieter
+  working environment, no commute fatigue
+- Measured in a call centre context — output metric: calls handled per shift
+- Employees reported higher job satisfaction under remote arrangement
+- Attrition fell 50% among remote workers during the study period
+
+Study design: Randomized controlled trial. 249 employees at Ctrip (Chinese
+travel agency). 9-month study. Call centre workers with easily quantifiable
+output.
+
+Note from authors: These results may not generalize to all knowledge work
+contexts. Call centre output is highly measurable — creative and collaborative
+work may respond differently.
+
+--- SOURCE S2: Microsoft Work Trend Index (2022) ---
+
+Title: Great Expectations: Making Hybrid Work Work
+Published by: Microsoft Corporation
+
+Key findings:
+- Analysis of communication patterns across millions of Microsoft 365 users
+- Remote work caused professional networks to become more siloed over time
+- Connections between teams weakened; within-team ties strengthened
+- The average Teams user sends 45% more chats after 6pm than pre-pandemic
+- Lack of autonomy and unclear expectations were top two burnout predictors
+  among knowledge workers specifically
+- Innovation and tacit knowledge transfer suffer in fully remote settings
+- Junior employees lose informal learning opportunities without in-person access
+  to senior colleagues
+
+Methodology: Behavioral data analysis from Microsoft 365 platform usage,
+supplemented by survey of 31,000 workers across 31 countries.
+
+Note: This is an industry-funded report. Microsoft has commercial interests in
+hybrid work infrastructure. Results should be interpreted with this in mind.

@@ -1,0 +1,9 @@
+# LexisAI Public — Dependencies
+# Core SDK and stub runner only
+# The full production system has additional private dependencies
+
+anthropic>=0.49.0
+python-dotenv>=1.0.0
+
+# Optional — required only for OpenAI / OpenRouter provider
+# openai>=1.0.0

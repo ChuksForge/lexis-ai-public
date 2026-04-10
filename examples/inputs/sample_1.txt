@@ -1,0 +1,31 @@
+Research question: What are the cognitive effects of chronic sleep deprivation?
+
+--- SOURCE S1: Van Dongen et al. (2003) ---
+
+Title: The Cumulative Cost of Additional Wakefulness: Dose-Response Effects on
+Neurobehavioral Functions and Sleep Physiology From Chronic Sleep Restriction
+and Total Sleep Deprivation
+
+Published in: Sleep, Vol. 26, No. 2
+
+Abstract excerpt:
+Chronic restriction of sleep to 6 hours or less per night produced cognitive
+performance deficits equivalent to up to 2 nights of total sleep deprivation.
+Sleepiness ratings suggested that subjects were largely unaware of these
+increasing deficits, which were reflected on a psychomotor vigilance task (PVT)
+and the Karolinska Sleepiness Scale (KSS).
+
+Key findings:
+- 14 days of sleep restriction to 6h produced deficits matching 2 nights
+  of total deprivation
+- Subjects failed to recognize their own impairment — subjective sleepiness
+  stabilized while objective performance continued to decline
+- Psychomotor vigilance task (PVT) showed the most consistent impairment
+- Working memory and cognitive throughput were significantly affected
+- Effect was dose-dependent: 4h restriction worse than 6h, 6h worse than 8h
+
+Study design: Controlled laboratory study, 48 subjects across three sleep
+restriction conditions (4h, 6h, 8h per night) over 14 days.
+
+Authors: Hans P.A. Van Dongen, Greg Maislin, Janet M. Mullington, David F. Dinges
+Institution: University of Pennsylvania School of Medicine

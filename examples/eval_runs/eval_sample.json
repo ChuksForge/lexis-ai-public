@@ -1,0 +1,189 @@
+{
+  "suite_score": 8.3,
+  "total_cases": 5,
+  "timestamp": "20250408_120000",
+  "results": [
+    {
+      "id": "TC01",
+      "name": "Single source — clear research question",
+      "description": "Agent receives one high-quality source and a stated question.",
+      "overall_score": 8.8,
+      "scores": {
+        "structural_checks": {
+          "score": 9.5,
+          "pass_count": 15,
+          "fail_count": 1,
+          "passed": [
+            "✓ Contains: '📋 RESEARCH BRIEF'",
+            "✓ Contains: '🔍 DEEP DIVE'",
+            "✓ Contains: 'OVERVIEW'",
+            "✓ Contains: 'KEY THEMES'",
+            "✓ Contains: 'CROSS-SOURCE ANALYSIS'",
+            "✓ Contains: 'Points of Agreement'",
+            "✓ Contains: 'Points of Contradiction'",
+            "✓ Contains: 'Gaps in the Evidence'",
+            "✓ Contains: 'INSIGHT RANKING'",
+            "✓ Contains: 'OPEN QUESTIONS'",
+            "✓ Contains: 'SYNTHESIS STATEMENT'",
+            "✓ Contains: 'SUGGESTED NEXT STEPS'",
+            "✓ Contains: '[S1]'",
+            "✓ Correctly absent: '[S2]'",
+            "✓ Correctly absent: '[S3]'"
+          ],
+          "failed": [
+            "✗ Missing: 'Scope note' (minor formatting variation)"
+          ]
+        },
+        "structure_compliance": {
+          "score": 9.0,
+          "sections_found": [
+            "RESEARCH BRIEF", "DEEP DIVE", "OVERVIEW", "KEY THEMES",
+            "CROSS-SOURCE ANALYSIS", "INSIGHT RANKING", "OPEN QUESTIONS",
+            "SYNTHESIS STATEMENT", "SUGGESTED NEXT STEPS"
+          ],
+          "sections_missing": [],
+          "reasoning": "All required sections present and correctly formatted. Insight Ranking table well-structured. Research Brief contains all required fields. Minor scope note formatting variation noted."
+        },
+        "annotation_accuracy": {
+          "score": 9.0,
+          "annotation_issues": [],
+          "unannotated_claim_examples": [],
+          "reasoning": "Annotation coverage is strong throughout. [S1] used correctly for all claims traceable to the Van Dongen paper. [general knowledge] used appropriately for contextual claims. No unsourced factual claims detected. [inferred] used correctly where reasoning extends beyond the source."
+        },
+        "synthesis_quality": {
+          "score": 8.0,
+          "criteria_scores": {
+            "question_answered": 9,
+            "source_integration": 7,
+            "contradiction_handling": 8,
+            "evidence_weighting": 8,
+            "uncertainty_acknowledgement": 9,
+            "actionability": 7
+          },
+          "strengths": [
+            "Synthesis statement directly answers the research question with appropriate hedging",
+            "Uncertainty about generalisability acknowledged explicitly",
+            "Gaps in evidence section well-populated with specific limitations"
+          ],
+          "weaknesses": [
+            "Source integration limited by single source — correctly handled but lowers cross-source synthesis score",
+            "Next steps could be more specific about which databases to search"
+          ],
+          "reasoning": "Strong output for a single-source report. The agent correctly identifies that cross-source synthesis is limited by having one source, fills contextual gaps with clearly-flagged general knowledge, and produces a synthesis statement appropriately scoped to the evidence."
+        }
+      }
+    },
+    {
+      "id": "TC02",
+      "name": "Two contradicting sources",
+      "overall_score": 8.5,
+      "scores": {
+        "structural_checks": { "score": 10.0, "pass_count": 16, "fail_count": 0 },
+        "structure_compliance": {
+          "score": 9.0,
+          "reasoning": "All sections present and correctly formatted. Contradiction section properly populated."
+        },
+        "annotation_accuracy": {
+          "score": 8.5,
+          "reasoning": "Both [S1] and [S2] used correctly throughout. Two minor instances where [inferred] would be more precise than [general knowledge] for reasoning-based claims."
+        },
+        "synthesis_quality": {
+          "score": 8.5,
+          "criteria_scores": {
+            "question_answered": 9,
+            "source_integration": 9,
+            "contradiction_handling": 9,
+            "evidence_weighting": 8,
+            "uncertainty_acknowledgement": 8,
+            "actionability": 8
+          },
+          "reasoning": "Strong cross-source synthesis. The key insight — that the apparent contradiction dissolves when timeframe and unit of analysis are held constant — demonstrates genuine analytical synthesis rather than sequential summary."
+        }
+      }
+    },
+    {
+      "id": "TC03",
+      "name": "No sources — topic only",
+      "overall_score": 8.0,
+      "scores": {
+        "structural_checks": { "score": 9.5, "pass_count": 15, "fail_count": 1 },
+        "structure_compliance": {
+          "score": 8.5,
+          "reasoning": "All sections present. Research Brief correctly notes absence of provided sources."
+        },
+        "annotation_accuracy": {
+          "score": 8.0,
+          "reasoning": "All claims correctly flagged [general knowledge]. No [S1] tags present. Two instances where [inferred] would be more precise."
+        },
+        "synthesis_quality": {
+          "score": 7.5,
+          "criteria_scores": {
+            "question_answered": 8,
+            "source_integration": 7,
+            "contradiction_handling": 7,
+            "evidence_weighting": 7,
+            "uncertainty_acknowledgement": 9,
+            "actionability": 8
+          },
+          "reasoning": "Solid performance for a no-source report. Correctly limited by absence of provided material, uncertainty well-acknowledged, next steps specifically recommend sources that would strengthen a real analysis."
+        }
+      }
+    },
+    {
+      "id": "TC04",
+      "name": "High-quality + low-quality source",
+      "overall_score": 8.2,
+      "scores": {
+        "structural_checks": { "score": 10.0, "pass_count": 16, "fail_count": 0 },
+        "structure_compliance": {
+          "score": 9.0,
+          "reasoning": "All sections present. Low-quality source flagged in Research Brief as required."
+        },
+        "annotation_accuracy": {
+          "score": 8.0,
+          "reasoning": "[S1] and [S2] both used. S2 claims handled with appropriate scepticism. Quality signal reflected in Insight Ranking."
+        },
+        "synthesis_quality": {
+          "score": 7.5,
+          "criteria_scores": {
+            "question_answered": 8,
+            "source_integration": 8,
+            "contradiction_handling": 8,
+            "evidence_weighting": 8,
+            "uncertainty_acknowledgement": 7,
+            "actionability": 7
+          },
+          "reasoning": "Evidence weighting correctly applied — Cochrane review claims rank above blog claims. Low-quality source handled transparently without dismissing it entirely."
+        }
+      }
+    },
+    {
+      "id": "TC05",
+      "name": "Three sources — full synthesis",
+      "overall_score": 8.2,
+      "scores": {
+        "structural_checks": { "score": 10.0, "pass_count": 16, "fail_count": 0 },
+        "structure_compliance": {
+          "score": 9.0,
+          "reasoning": "All sections present. All three sources annotated in Research Brief."
+        },
+        "annotation_accuracy": {
+          "score": 8.0,
+          "reasoning": "All three source tags used correctly. Cross-source claims correctly attributed to multiple sources."
+        },
+        "synthesis_quality": {
+          "score": 7.5,
+          "criteria_scores": {
+            "question_answered": 8,
+            "source_integration": 8,
+            "contradiction_handling": 7,
+            "evidence_weighting": 8,
+            "uncertainty_acknowledgement": 7,
+            "actionability": 8
+          },
+          "reasoning": "Good three-source synthesis. Convergence across S1/S2/S3 correctly identified. Minor opportunity: the S1 academic vs S2/S3 industry report distinction could be more explicitly weighted in the Insight Ranking."
+        }
+      }
+    }
+  ]
+}

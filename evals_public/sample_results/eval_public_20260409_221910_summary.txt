@@ -1,0 +1,22 @@
+LexisAI Public Eval Suite - 20260409_221910
+============================================================
+
+Suite Score: 9.52/10
+Cases Run:   5
+Eval Type:   Structural checks only (no LLM judge)
+
+[TC01] Single source — clear research question
+  Overall: 10.0/10
+
+[TC02] Two contradicting sources
+  Overall: 9.53/10
+
+[TC03] No sources — topic only
+  Overall: 9.43/10
+
+[TC04] High-quality + low-quality source
+  Overall: 9.33/10
+
+[TC05] Three sources — full synthesis
+  Overall: 9.33/10
+
