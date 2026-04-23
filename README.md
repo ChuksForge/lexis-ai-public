@@ -198,7 +198,7 @@ The full LexisAI system — complete synthesis engine, live web search,
 PDF export, and managed infrastructure — is in private access.
 
 **Interested in early access or a technical walkthrough?**
-→ [Connect on Telegram](https://t.me/ChuksForge), Email: chuksprompts@email.com
+→ [Connect on Telegram](https://t.me/ChuksForge), Email: [chuksforge@gmail.com](mailto:chuksforge@gmail.com)
 or [Twitter](https://x.com/ChuksForge)
 
 ---
@@ -213,4 +213,9 @@ in this repository.
 
 ---
 
-*Built by [ChuksForge](https://chuksforge.github.io)*
+## Built by ChuksForge AI Solutions Ltd.
+
+Production-grade AI agents, tools, and applications.
+
+**Portfolio:** [chuksforge.github.io](https://chuksforge.github.io)
+**GitHub:** [@ChuksForge](https://github.com/ChuksForge) · **Email:** [chuksforge@gmail.com](mailto:chuksforge@gmail.com) · **Telegram:** [@ChuksForge](https://t.me/ChuksForge)
